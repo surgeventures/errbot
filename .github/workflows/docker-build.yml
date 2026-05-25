@@ -18,7 +18,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: build and push docker image
-      uses: mr-smithers-excellent/docker-build-push@v5
+      uses: mr-smithers-excellent/docker-build-push@0e68818ea37ba7728f417f03a58e06e68d9d2592 # v5
       with:
         image: errbotio/errbot
         tags: latest

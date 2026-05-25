@@ -1,0 +1,31 @@
+version: 1
+generated_at: 2026-05-25T13:05:12Z
+internal: []
+trusted:
+  - action: actions/checkout
+    refs:
+      - v2
+    occurrences:
+      v2:
+        .github/workflows/docker-build.yml:
+          - jobs.build.steps.[0].uses
+        .github/workflows/python-package.yml:
+          - jobs.build.steps.[0].uses
+  - action: actions/setup-python
+    refs:
+      - v4.0.0
+    occurrences:
+      v4.0.0:
+        .github/workflows/python-package.yml:
+          - jobs.build.steps.[1].uses
+external:
+  - action: mr-smithers-excellent/docker-build-push
+    refs:
+      - v5
+    occurrences:
+      v5:
+        .github/workflows/docker-build.yml:
+          - jobs.build.steps.[1].uses
+local: []
+docker: []
+dynamic: []
