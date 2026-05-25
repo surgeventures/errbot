@@ -1,5 +1,5 @@
 version: 1
-generated_at: 2026-05-25T13:05:12Z
+generated_at: 2026-05-25T15:33:09Z
 internal: []
 trusted:
   - action: actions/checkout
@@ -21,9 +21,9 @@ trusted:
 external:
   - action: mr-smithers-excellent/docker-build-push
     refs:
-      - v5
+      - 0e68818ea37ba7728f417f03a58e06e68d9d2592
     occurrences:
-      v5:
+      0e68818ea37ba7728f417f03a58e06e68d9d2592:
         .github/workflows/docker-build.yml:
           - jobs.build.steps.[1].uses
 local: []
